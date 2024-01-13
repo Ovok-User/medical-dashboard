@@ -9,6 +9,7 @@ import { App } from './App';
 const medplum = new MedplumClient({
   // To run FooMedical locally, you can set the baseURL in this constructor
   // baseUrl: http://localhost:8103
+  baseUrl: "https://dashboard.dev.ovok.com/api",
   onUnauthenticated: () => (window.location.href = '/'),
 });
 
