@@ -21,7 +21,7 @@ export function App(): JSX.Element | null {
   if (!medplum.getProfile()) {
     return (
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<SignInPage />} />
         <Route path="signin" element={<SignInPage />} />
         <Route path="register" element={<RegisterPage />} />
         <Route path="*" element={<Navigate replace to="/" />} />
